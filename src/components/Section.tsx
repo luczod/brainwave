@@ -1,12 +1,13 @@
 import { ReactNode } from 'react';
 import SectionSvg from '../assets/svg/SectionSvg';
+import { twMerge } from 'tailwind-merge';
 
 type TSection = {
   className: string;
   id: string;
   crosses: boolean;
   crossesOffset: string;
-  customPaddings: string;
+  customPaddings: boolean;
   children: ReactNode;
 };
 
@@ -34,9 +35,10 @@ function Section({
       {crosses && (
         <>
           <div
-            className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${
-              crossesOffset && crossesOffset
-            } pointer-events-none lg:block xl:left-10 right-10`}
+            className={twMerge(
+              'hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1  pointer-events-none lg:block xl:left-10 xl:right-10',
+              crossesOffset,
+            )}
           />
           <SectionSvg crossesOffset={crossesOffset} />
         </>
