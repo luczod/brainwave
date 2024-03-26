@@ -1,3 +1,4 @@
+import { twMerge } from 'tailwind-merge';
 import PlusSvg from './PlusSvg';
 
 type TProps = {
@@ -8,15 +9,17 @@ const SectionSvg = ({ crossesOffset }: TProps) => {
   return (
     <>
       <PlusSvg
-        className={`hidden absolute -top-[0.3125rem] left-[1.5625rem] ${
-          crossesOffset && crossesOffset
-        } pointer-events-none lg:block xl:left-[2.1875rem]`}
+        className={twMerge(
+          'hidden absolute -top-[0.3125rem] left-[1.5625rem] pointer-events-none lg:block xl:left-[2.1875rem]',
+          crossesOffset,
+        )}
       />
 
       <PlusSvg
-        className={`hidden absolute  -top-[0.3125rem] right-[1.5625rem] ${
-          crossesOffset && crossesOffset
-        } pointer-events-none lg:block xl:right-[2.1875rem]`}
+        className={twMerge(
+          'hidden absolute -top-[0.3125rem] right-[1.5625rem] ${crossesOffset} pointer-events-none lg:block xl:right-[2.1875rem]',
+          crossesOffset,
+        )}
       />
     </>
   );

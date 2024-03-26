@@ -36,6 +36,8 @@ import {
   yourlogo,
 } from '../assets';
 
+export type TCSSClass = { className?: string };
+
 export const navigation = [
   {
     id: '0',
