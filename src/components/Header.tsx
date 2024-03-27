@@ -30,7 +30,7 @@ function Header() {
   };
 
   return (
-    <div
+    <header
       aria-expanded={openNavigation}
       className="fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm aria-[expanded=true]:bg-n-8 aria-[expanded=false]:bg-n-8/90 aria-[expanded=false]:backdrop-blur-sm"
     >
@@ -76,7 +76,7 @@ function Header() {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
-    </div>
+    </header>
   );
 }
 
