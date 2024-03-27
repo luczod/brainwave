@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactElement } from 'react';
 import SectionSvg from '../assets/svg/SectionSvg';
 import { twMerge } from 'tailwind-merge';
 
@@ -8,7 +8,7 @@ type TSection = {
   crosses: boolean;
   crossesOffset: string;
   customPaddings: boolean;
-  children: ReactNode;
+  children: ReactElement[] | ReactElement;
 };
 
 function Section({
@@ -20,7 +20,7 @@ function Section({
   children,
 }: Partial<TSection>) {
   return (
-    <div
+    <section
       id={id}
       className={`
       relative
@@ -43,7 +43,7 @@ function Section({
           <SectionSvg crossesOffset={crossesOffset} />
         </>
       )}
-    </div>
+    </section>
   );
 }
 

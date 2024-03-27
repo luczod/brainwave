@@ -6,7 +6,7 @@ type TProps = TCSSClass & {
   title: string;
 };
 
-const Notification = ({ className, title }: TProps) => {
+const Notification: React.FC<TProps> = ({ className, title }) => {
   return (
     <div
       className={twMerge(

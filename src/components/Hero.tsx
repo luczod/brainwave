@@ -14,7 +14,7 @@ function Hero() {
 
   return (
     <Section
-      id="Hero"
+      id="hero"
       className="pt-[12rem] -mt-[5.25]"
       crosses
       customPaddings
