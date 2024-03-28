@@ -5,7 +5,7 @@ import Button from './Button';
 
 function PricingList() {
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap">
+    <div className="flex gap-4 max-lg:flex-wrap">
       {pricing.map((item) => (
         <div
           key={item.id}
@@ -13,7 +13,7 @@ function PricingList() {
         >
           <h4 className="h4 mb-4">{item.title}</h4>
 
-          <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">{item.description}</p>
+          <p className="body-2 min-h-16 mb-3 text-n-1/50">{item.description}</p>
 
           <div className="flex items-center h-[5.5rem] mb-6">
             {item.price && (
