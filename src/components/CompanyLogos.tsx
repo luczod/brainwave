@@ -1,4 +1,4 @@
-import { TCSSClass, companyLogos } from '../constants';
+import { TCSSClass, companyLogos } from '../API';
 
 const CompanyLogos = ({ className }: TCSSClass) => {
   return (

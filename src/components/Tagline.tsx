@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import brackets from '../assets/svg/Brackets';
-import { TCSSClass } from '../constants';
+import { TCSSClass } from '../API';
 
 type TProps = TCSSClass & {
   children: string;

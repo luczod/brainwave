@@ -1,5 +1,5 @@
 import { loading } from '../assets';
-import { TCSSClass } from '../constants';
+import { TCSSClass } from '../API';
 
 const Generating: React.FC<TCSSClass> = ({ className }) => {
   return (

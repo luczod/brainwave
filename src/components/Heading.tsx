@@ -1,5 +1,5 @@
 import { twMerge } from 'tailwind-merge';
-import { TCSSClass } from '../constants';
+import { TCSSClass } from '../API';
 import TagLine from './Tagline';
 
 type TProps = TCSSClass & {

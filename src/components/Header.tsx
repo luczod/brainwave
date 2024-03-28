@@ -3,7 +3,7 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 import { useState } from 'react';
 
 import { brainwave } from '../assets';
-import { navigation } from '../constants';
+import { navigation } from '../API';
 import { HamburgerMenu } from './design/Header';
 import Button from './Button';
 import MenuSvg from '../assets/svg/MenuSvg';

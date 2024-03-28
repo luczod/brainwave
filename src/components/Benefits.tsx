@@ -1,4 +1,4 @@
-import { benefits } from '../constants';
+import { benefits } from '../API';
 import Heading from './Heading';
 import Section from './Section';
 import Arrow from '../assets/svg/Arrow';
@@ -48,7 +48,7 @@ function Benefits() {
                       width={380}
                       height={362}
                       alt={item.title}
-                      className="w-full h-full object-cover"
+                      className="size-full object-cover"
                     />
                   )}
                 </div>

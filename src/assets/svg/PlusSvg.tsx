@@ -1,4 +1,4 @@
-import { TCSSClass } from '../../constants';
+import { TCSSClass } from '../../API';
 
 const PlusSvg = ({ className }: TCSSClass) => {
   return (

@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import { notification1 } from '../assets';
-import { TCSSClass, notificationImages } from '../constants';
+import { TCSSClass, notificationImages } from '../API';
 
 type TProps = TCSSClass & {
   title: string;
